@@ -1,0 +1,316 @@
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  src: url(../fonts/lato-google-fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  src: url(../fonts/lato-google-fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: 'Lato';
+  font-weight: 900;
+  src: url(../fonts/lato-google-fonts/Lato-Black.ttf);
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+  font-family: 'Lato';
+  font-weight: 400;
+  color: rgb(16, 39, 70);
+}
+a {
+  text-decoration: none;
+}
+ul, ol, li {
+  list-style: none;
+}
+img {
+  display: block;
+}
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.container-full {
+  max-width: 1264px;
+  margin: 0 auto;
+}
+.section-title {
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 253px;
+  height: 3px;
+  background-color: rgb(0, 109, 254);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header__container {
+  padding-top: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu__item {
+  margin-right: 82px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+.menu__link {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+}
+.menu__link:hover, 
+.menu__link:focus,
+.menu__link:active {
+  opacity: 0.75;
+}
+/* main */
+/* intro */
+.intro {
+  min-height: 100vh;
+  padding-top: 263px;
+  padding-bottom: 223px;
+  background: url(../img/intro-bg.jpeg) center no-repeat;
+  background-size: cover;
+}
+.intro__title {
+  max-width: 619px;
+  margin-bottom: 22px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  color: rgb(255, 255, 255);
+}
+.intro__subtitle {
+  max-width: 546px;
+  margin-bottom: 59px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+}
+.search-form__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-form__field {
+  width: 297px;
+  height: 49px;
+  margin-right: 60px;
+  border-bottom: 3px solid rgb(191, 192, 197);
+  padding: 0 0 22px 43px;
+  outline: 0;
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  background: transparent url(../img/svg/circle-icon.svg) 1px 2px no-repeat;
+  background-size: 20px;
+}
+.search-form__field::placeholder {
+  color: rgb(255, 255, 255);
+}
+.search-form__submit {
+  padding: 15px 39px;
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 125, 255);
+}
+.search-form__submit:active,
+.search-form__submit:focus,
+.search-form__submit:hover {
+  cursor: pointer;
+  background-color: rgb(0, 109, 254);
+}
+/* benefits */
+.benefits {
+  padding: 93px 100px 112px 100px;
+  position: relative;
+  top: -223px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 20px 0px rgba(21, 24, 36, 0.16);
+}
+.benefits__title {
+  margin-bottom: 120px;
+  font-family: "Lato";
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42px;
+  color: rgb(16, 39, 70);
+}
+.benefits__cards {
+  display: flex;
+}
+.benefits__card {
+  width: 317px;
+  margin-right: 55px;
+}
+.benefits__card:last-child {
+  margin-right: 0;
+}
+.benefits__card-img {
+  width: 66px;
+  height: 66px;
+  margin-bottom: 37px;
+}
+.benefits__card-title {
+  margin-bottom: 26px;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+.benefits__card-text {
+  margin-bottom: 39px;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+.benefits__card-more {
+  padding-right: 59px;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(0, 109, 254);
+  background: url(../img/svg/arrow-icon.svg) no-repeat center right;
+}
+/* trip */
+.trip {
+  margin-bottom: 131px;
+}
+.trip__header {
+  margin-bottom: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.trip__title {
+  margin-right: 15px;
+}
+.trip__link {
+  padding-right: 60px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(0, 109, 254);
+  background: url(../img/svg/arrow-icon.svg) no-repeat center right;
+}
+.places__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.places__container:first-child {
+  margin-bottom: 10px;
+}
+.places__card {
+  position: relative;
+}
+.trip__caption {
+  position: absolute;
+  bottom: 27px;
+  left: 30px;
+  z-index: 2;
+  font-weight: 700;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+.places__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+/* tours */
+.tours {
+  margin-bottom: 139px;
+}
+.tour {
+  display: flex;
+}
+.tour:first-child {
+  margin-bottom: 77px;
+}
+.tour__info {
+  padding: 25px 47px 50px 108px;
+}
+.tour__info_left {
+  padding: 25px 108px 50px 47px;
+}
+.tour__title {
+  max-width: 360px;
+  margin-bottom: 85px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+}
+.tour__title_left {
+  margin-bottom: 45px;
+}
+.tour__description {
+  max-width: 519px;
+  margin-bottom: 58px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.tour__link {
+  padding-right: 60px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(0, 109, 254);
+  background: url(../img/svg/arrow-icon.svg) no-repeat center right;
+}
+/* top */
+.top {
+  margin-bottom: 144px;
+}
+/* стили для переработанного блока */
+.top__places {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.top__place {
+  max-width: 392px;
+}
